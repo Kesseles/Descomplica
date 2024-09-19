@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Viagens</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Página de Viagens</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <section class="container bg-light p-4 mb-5 rounded">
+            <h2 class="text-center">Formulário de Contato</h2>
+            <p>Antes de começarmos sua busca pela viagem ideal, por favor, preencha o formulário abaixo para que possamos lhe ajudar da melhor forma.</p>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" required name="nome">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required name="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="quantidadePessoas" class="form-label">Quantas pessoas irão?</label>
+                        <input type="number" class="form-control" id="quantidadePessoas" name="quantidadePessoas">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações Sobre a Viagem</legend>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="dataIda" class="form-label">Ida</label>
+                            <input type="date" class="form-control" id="dataIda" required name="dataIda">
+                        </div>
+                        <div class="col">
+                            <label for="dataVolta" class="form-label">Volta</label>
+                            <input type="date" class="form-control" id="dataVolta" required name="dataVolta">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="servico" class="form-label">Qual(is) serviço(s) você procura?</label><br>
+                        <input type="checkbox" name="passagem" value="passagem"> Comprar passagem<br>
+                        <input type="checkbox" name="hospedagem" value="hospedagem"> Reservar hospedagem<br>
+                        <input type="checkbox" name="veiculo" value="veiculo"> Alugar um veículo
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Forma de Pagamento:</label><br>
+                        <input type="radio" name="pagamento" value="credito"> Cartão de crédito<br>
+                        <input type="radio" name="pagamento" value="boleto"> Boleto bancário<br>
+                        <input type="radio" name="pagamento" value="pix"> PIX
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="prazoPagamento" class="form-label">Prazo de Pagamento</label>
+                        <select class="form-select" id="prazoPagamento" name="prazoPagamento">
+                            <option value="avista" selected>À vista</option>
+                            <option value="5parcelas">5x s/ juros</option>
+                            <option value="10parcelas">10x c/ juros</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentário</legend>
+                    <div class="mb-3">
+                        <label for="comentario" class="form-label">Deixe um comentário:</label>
+                        <textarea class="form-control" id="comentario" rows="5" name="comentario"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary">Finalizar e Enviar</button>
+            </form>
+        </section>
+
+        <section class="container bg-light p-4 mb-5 rounded">
+            <h2 class="text-center">Destinos Populares</h2>
+            <p>Conheça nossos destinos mais visitados e planejados pelos viajantes em busca de aventura e tranquilidade.</p>
+        </section>
+
+        <section class="container bg-light p-4 mb-5 rounded">
+            <h2 class="text-center">Depoimentos</h2>
+            <p>Avaliações de nossos clientes sobre os serviços prestados e as experiências de viagem inesquecíveis.</p>
+        </section>
+    </main>
+
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; <span id="anoAtual"></span> Desenvolvido por Marcelo Kesseles</p>
+    </footer>
+
+    
+
+</body>
+
+</html>
